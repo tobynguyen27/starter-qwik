@@ -1,0 +1,58 @@
+{
+	"name": "pkg-name",
+	"version": "1.0.0",
+	"description": "pkg-description",
+	"keywords": [],
+	"homepage": "https://github.com/tobynguyen27/pkg-name#readme",
+	"bugs": {
+		"url": "https://github.com/tobynguyen27/pkg-name/issues"
+	},
+	"license": "MIT",
+	"author": "Toby Nguyen <hi@tobynguyen.net>",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/tobynguyen27/pkg-name.git"
+	},
+	"files": [
+		"dist"
+	],
+	"type": "module",
+	"sideEffects": false,
+	"exports": {
+		".": {
+			"import": "./dist/index.qwik.mjs",
+			"types": "./dist/index.d.ts"
+		},
+		"./package.json": "./package.json"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"build": "vp pack",
+		"dev": "vp pack --watch",
+		"test": "vp test",
+		"check": "vp check",
+		"prepublishOnly": "vp run build",
+		"prepare": "vp config",
+		"up": "taze",
+		"bump": "bumpp"
+	},
+	"devDependencies": {
+		"@builder.io/qwik": "catalog:dev",
+		"@types/node": "catalog:types",
+		"@typescript/native-preview": "catalog:types",
+		"bumpp": "catalog:scripts",
+		"taze": "catalog:scripts",
+		"typescript": "catalog:types",
+		"vite-plus": "catalog:build"
+	},
+	"peerDependencies": {
+		"@builder.io/qwik": "catalog:dev"
+	},
+	"engines": {
+		"node": ">=24"
+	},
+	"packageManager": "pnpm@11.1.2",
+	"qwik": "./dist/index.qwik.mjs"
+}
