@@ -37,8 +37,8 @@
 		"prepare": "vp config",
 		"up": "taze",
 		"bump": "bumpp",
-		"actions:apply-pins": "actionspack",
-		"actions:update-pins": "actionspack update"
+		"actions:pin": "actionspack",
+		"actions:update": "actionspack update"
 	},
 	"devDependencies": {
 		"@builder.io/qwik": "catalog:dev",
