@@ -36,12 +36,15 @@
 		"prepublishOnly": "vp run build",
 		"prepare": "vp config",
 		"up": "taze",
-		"bump": "bumpp"
+		"bump": "bumpp",
+		"actions:apply-pins": "actionspack",
+		"actions:update-pins": "actionspack update"
 	},
 	"devDependencies": {
 		"@builder.io/qwik": "catalog:dev",
 		"@types/node": "catalog:types",
 		"@typescript/native-preview": "catalog:types",
+		"actionspack": "catalog:scripts",
 		"bumpp": "catalog:scripts",
 		"taze": "catalog:scripts",
 		"typescript": "catalog:types",
