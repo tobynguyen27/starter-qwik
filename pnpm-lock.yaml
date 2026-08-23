@@ -21,8 +21,8 @@ catalogs:
       specifier: ^12.0.0
       version: 12.2.1
     taze:
-      specifier: ^19.12.0
-      version: 19.17.2
+      specifier: ^21.0.0
+      version: 21.1.0
   types:
     '@types/node':
       specifier: ^26.0.0
@@ -59,7 +59,7 @@ importers:
         version: 12.2.1
       taze:
         specifier: catalog:scripts
-        version: 19.17.2
+        version: 21.1.0
       typescript:
         specifier: catalog:types
         version: 7.0.2
@@ -1348,8 +1348,8 @@ packages:
   std-env@4.1.0:
     resolution: {integrity: sha512-Rq7ybcX2RuC55r9oaPVEW7/xu3tj8u4GeBYHBWCychFtzMIr86A7e3PPEBPT37sHStKX3+TiX/Fr/ACmJLVlLQ==}
 
-  taze@19.17.2:
-    resolution: {integrity: sha512-1WH+LUf5H0R07EF606fuP5TuHPVvtrMIPpn69EkqaOVJYg0foL8xnD+lEs0s19Zfmplul5nRd3TpbbF0twXCkw==}
+  taze@21.1.0:
+    resolution: {integrity: sha512-NkFkadmqqpaVZ9x3bV4cul1xQnUknhs1HzE3Q/VXHKS7np2Kg7ZNL7nNsEsBXKsafmgepa+aZNtzoegDgsymPw==}
     hasBin: true
 
   tinybench@2.9.0:
@@ -2225,7 +2225,7 @@ snapshots:
 
   std-env@4.1.0: {}
 
-  taze@19.17.2:
+  taze@21.1.0:
     dependencies:
       '@antfu/ni': 30.5.0
       '@henrygd/queue': 1.2.0
